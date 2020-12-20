@@ -1,0 +1,15 @@
+language: csharp
+solution: Project.sln
+dotnet: 2.1.401
+script:
+  - dotnet build 
+branches:
+  only:
+    - main
+    - stable
+    - homol
+notifications:
+  email:
+    recipients:
+      - dgncn.ksp@gmail.com
+    on_success: always
